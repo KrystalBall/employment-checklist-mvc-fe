@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krystal Ball Challenge</title>
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a asp-area="" asp-controller="Home" asp-action="Index">Application</a></li>
+            <li><a asp-area="" asp-controller="Review" asp-action="Index">Review</a></li>
+        </ul>
+    </nav>
+    <main>@RenderBody()</main>
+    <footer>
+        <div>&copy; 2022 - Krystal Ball Challenge</div>
+    </footer>
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/site.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
